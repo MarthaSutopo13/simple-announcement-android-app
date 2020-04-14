@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Announcement</string>
+
+    <string name="pengumuman">Pengumuman</string>
+    <string name="urutkan">Urutkan</string>
+    <string name="terbaru_dibagikan">Terbaru dibagikan</string>
+    <string name="tanggal_kegiatan_terdekat">Tanggal kegiatan terdekat</string>
+    <string name="belum_dibaca">Belum dibaca</string>
+</resources>

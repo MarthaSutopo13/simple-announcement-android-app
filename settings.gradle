@@ -1,0 +1,2 @@
+include ':app', ':core_base'
+rootProject.name='Announcement'

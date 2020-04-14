@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/tb_toolbar"
+        layout="@layout/normal_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb_toolbar"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_medium_size"
+        android:layout_marginTop="@dimen/margin_small_15"
+        android:layout_marginBottom="@dimen/margin_small_15"
+        android:text="Urutkan berdasarkan ...."/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sr_pengumuman"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_description">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_pengumuman"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item_pengumuman_layout"
+            android:orientation="vertical"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_filter"
+        android:layout_width="@dimen/margin_xxlarge_size"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_xmedium_size"
+        android:padding="@dimen/margin_small"
+        android:background="@drawable/bg_corner_radius_blue"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="@dimen/margin_small_15"
+            android:layout_height="@dimen/margin_small_15"
+            android:layout_marginRight="@dimen/margin_small"
+            android:src="@drawable/ic_filter"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Urutkan"/>
+    </LinearLayout>
+</RelativeLayout>

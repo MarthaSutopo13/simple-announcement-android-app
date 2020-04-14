@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_sheet_corner_radius">10dp</dimen>
+    <dimen name="bottom_sheet_top_padding">30dp</dimen>
+
+    <!--TEXT-->
+    <dimen name="text_medium_size_14">14sp</dimen>
+    <dimen name="text_medium_size">15sp</dimen>
+    <dimen name="text_medium_size_16">16sp</dimen>
+    <dimen name="text_xmedium_size">20sp</dimen>
+
+    <!--LAYOUT MARGIN-->
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_small_12">12dp</dimen>
+    <dimen name="margin_small_15">15dp</dimen>
+    <dimen name="margin_medium_size">20dp</dimen>
+    <dimen name="margin_xmedium_size">30dp</dimen>
+    <dimen name="margin_xxlarge_size">120dp</dimen>
+</resources>
